@@ -1,0 +1,3 @@
+00:08:15.472 [Test worker] ERROR rules.api.engine.RulesEngineImpl - Can not instantiate KieSession.Please check configuration
+€00:08:15.488 [Test worker] ERROR rules.api.engine.RulesEngineImpl - Missing mandatory details in rulesRequest to run the rules
+‰00:08:15.503 [Test worker] ERROR rules.api.engine.RulesEngineImpl - Can not instantiate stateless KieSession.Please check configuration

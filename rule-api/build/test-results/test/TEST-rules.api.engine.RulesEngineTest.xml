@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rules.api.engine.RulesEngineTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-10-07T23:08:15" hostname="CPX-LEPD15MHXHQ" time="0.062">
+  <properties/>
+  <testcase name="testDefaultSession" classname="rules.api.engine.RulesEngineTest" time="0.031"/>
+  <testcase name="testNullFact" classname="rules.api.engine.RulesEngineTest" time="0.0"/>
+  <testcase name="testNullRequestParamCheck" classname="rules.api.engine.RulesEngineTest" time="0.0"/>
+  <testcase name="testSetUp" classname="rules.api.engine.RulesEngineTest" time="0.0"/>
+  <testcase name="testStateLessSession" classname="rules.api.engine.RulesEngineTest" time="0.0"/>
+  <system-out><![CDATA[00:08:15.472 [Test worker] ERROR rules.api.engine.RulesEngineImpl - Can not instantiate KieSession.Please check configuration
+00:08:15.488 [Test worker] ERROR rules.api.engine.RulesEngineImpl - Missing mandatory details in rulesRequest to run the rules
+00:08:15.503 [Test worker] ERROR rules.api.engine.RulesEngineImpl - Can not instantiate stateless KieSession.Please check configuration
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

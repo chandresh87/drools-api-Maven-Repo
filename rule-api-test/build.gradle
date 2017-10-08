@@ -1,0 +1,40 @@
+plugins {
+  id 'com.github.sherter.google-java-format' version '0.6'
+  id "nebula.ospackage" version "4.4.0"
+}
+group = 'com.rules-api-test'
+version = '1.0.0'
+
+apply plugin:'java'
+apply plugin: 'maven'
+
+
+ sourceCompatibility = 1.8
+ targetCompatibility = 1.8
+ 
+  repositories {
+   maven { url 'http://10.133.49.250:8081/repository/nps-itmp/' }
+
+  }
+dependencies {
+   
+    compile group: 'org.drools', name: 'drools-core', version:'7.3.0.Final'
+    compile group: 'org.drools', name: 'drools-compiler', version:'7.3.0.Final'
+    compile group: 'org.kie', name: 'kie-api', version:'7.3.0.Final'
+  	compile group: 'org.mvel', name: 'mvel2', version:'2.3.2.Final'
+    compile group: 'org.kie', name: 'kie-ci', version:'7.3.0.Final'
+    
+    //compile group: 'org.slf4j', name: 'slf4j-api', version:'1.7.5'
+    //compile group: 'org.slf4j', name: 'slf4j-log4j12', version:'1.7.5'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version:'2.8.2'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.8.2'
+    compile group: 'commons-configuration', name: 'commons-configuration', version: '1.6'
+    compile group: 'com.google.googlejavaformat', name: 'google-java-format', version: '1.4'
+    
+    testCompile group: 'org.testng', name: 'testng', version:'6.10'
+    testCompile group: 'org.mockito', name: 'mockito-core', version:'2.7.22'
+    testCompile group: 'org.springframework', name: 'spring-test', version:'5.0.0.RELEASE'
+    
+}
+
+test.useTestNG()
